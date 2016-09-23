@@ -278,7 +278,7 @@ const FluidProfileForm = React.createClass({
                 'gas', 'furans', 'pcb', 'water',
                 'inhibitor', 'dielec', 'dielec_2',
                 'dielec_d', 'acidity', 'color',
-                'ift', 'density', 'pf_25', 'pf_100',
+                'ift', 'density', 'pf_100',
                 'pcb_jar', 'particles', 'furans_f',
                 'inhibitor_jar', 'metals', 'water_w',
                 'point', 'viscosity', 'corr', 'dielec_i',
@@ -627,10 +627,10 @@ const FluidProfileForm = React.createClass({
                                                 </div>
                                                 <div className="col-md-4 nopadding padding-right-xs">
                                                     <Checkbox
-                                                        name="pf_25"
-                                                        checked={this.state.data.pf_25 ? 'checked': null}
+                                                        name="visual"
+                                                        checked={this.state.data.visual ? 'checked': null}
                                                         value="1"
-                                                    >PF25C(D924)</Checkbox>
+                                                    >Visual(D1524)</Checkbox>
                                                 </div>
                                                 <div className="col-md-4 nopadding">
                                                     <Checkbox
@@ -717,13 +717,6 @@ const FluidProfileForm = React.createClass({
                                                     checked={this.state.data.dielec_i ? 'checked': null}
                                                     value="1"
                                                 >Dielec.IEC-156(kV)</Checkbox>
-                                            </div>
-                                            <div className="maxwidth">
-                                                <Checkbox
-                                                    name="visual"
-                                                    checked={this.state.data.visual ? 'checked': null}
-                                                    value="1"
-                                                >Visual(D1524)</Checkbox>
                                             </div>
                                             <div className="maxwidth">
                                                 <div className="col-md-2 nopadding padding-right-xs">
